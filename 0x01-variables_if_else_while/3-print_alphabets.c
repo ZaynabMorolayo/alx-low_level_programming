@@ -1,17 +1,26 @@
 #include <stdio.h>
+
 /**
- * main - main block
- * description - printing alphabet
- * Always 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	char c;
 
-	for (c = 'a'; c <= 'z'; c++)
+	c = 'a';
+	while (c <= 'z')
+	{
 		putchar(c);
-	for (c = 'A'; c <= 'Z'; c++)
+		++c;
+	}
+	c = 'A';
+	while (c <= 'Z')
+	{
 		putchar(c);
-		putchar('\n');
-
+		++c;
+	}
+	putchar('\n');
 	return (0);
+}
